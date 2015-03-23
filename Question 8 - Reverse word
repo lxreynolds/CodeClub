@@ -1,0 +1,7 @@
+word = str(input("Type your word here:"))
+word = word [::-1]
+first_letter = word[0].upper()
+last_letter = word[-1].lower()
+middle_slice = word[1:-1]
+combined_word = first_letter + middle_slice + last_letter
+print (combined_word)
