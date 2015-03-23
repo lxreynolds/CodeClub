@@ -1,0 +1,8 @@
+def no_consonants (str):
+   new_string = str
+   consonants = ["B","b","C","c","D","d","F","f","G","g","H","h","J","j","K","k","L","l","M","m","N","n","P","p","Q","q","R","r","S","s","T","t","V","v","W","w","X","x","Y","y","Z","z"]
+   for consonant in consonants:
+       new_string = new_string.replace(consonant,"")
+   return (new_string)
+
+print (no_consonants ("oh my word perhaps this will finally work"))
