@@ -1,0 +1,2 @@
+word = str(input("Type your word here:"))
+print (word.upper())
