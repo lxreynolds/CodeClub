@@ -1,0 +1,8 @@
+def no_vowels (str):
+   new_string = str
+   vowels = ["A","a","E","e","I","i","O","o","U","u"]
+   for vowel in vowels:
+       new_string = new_string.replace(vowel,"")
+   return (new_string)
+
+print (no_vowels ("oh my word perhaps this will finally work"))
