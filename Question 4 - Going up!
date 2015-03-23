@@ -1,0 +1,15 @@
+numbers_list = [3,4,5,6,7,8,9,10,-1,12,13,14,15,16,17,18,19,20]
+sequence = int(numbers_list[0]-1)
+for i in numbers_list:
+   if i != -1:
+       if i - sequence == 1:
+           sequence = i
+       else:
+           sequence = 0
+   elif i == -1:
+       if sequence == 0:
+           print ("No")
+           break
+       else:
+           print ("Yes")
+           break
