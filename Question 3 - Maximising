@@ -1,0 +1,9 @@
+numbers_list = [1,2,3,4,5,14,7,8,9,10,-1,12,13,14,15,16,17,18,19,20]
+largest = float(0.0)
+for i in numbers_list:
+   if i == -1:
+       print (largest)
+       break
+   else:
+       if float(i) > largest:
+           largest = i
