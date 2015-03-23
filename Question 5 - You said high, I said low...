@@ -1,0 +1,13 @@
+numbers_list = [2,6,8,10,-1]
+sequence = int(numbers_list[0]-1)
+continuous = "Yes"
+for i in numbers_list:
+   if i == -1:
+       print (continuous)
+       break
+   elif i - sequence == 1:
+       sequence = i
+   elif i - sequence == -1:
+       sequence = i
+   elif i - sequence != 1 or -1:
+       continuous = "No"
