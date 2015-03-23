@@ -1,0 +1,6 @@
+pyramid_value = int(input("Enter a number: "))
+if pyramid_value > 0:
+   for i in range (1, pyramid_value + 1):
+       print (str(i) * i)
+else:
+   print ("Invalid number")
