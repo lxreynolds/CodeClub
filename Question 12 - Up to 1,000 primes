@@ -1,0 +1,14 @@
+def primes(find_number):
+       primes_list = []
+       tally = 0
+       for number in range(2,10000):
+           for i in range (2, number):
+               if (number % i) == 0:
+                   break
+           else:
+               tally = tally + 1
+               primes_list.append(number)
+               if tally == find_number:
+                   return primes_list
+
+print (primes(1000))
