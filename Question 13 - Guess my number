@@ -1,0 +1,26 @@
+def guess_number():
+       import random
+       random_number = random.randint(0,10)
+       guesses = 1
+       first_guess = int(input("Try to guess my number! First guess:"))
+       if first_guess == random_number:
+           print ("Correct! You needed one guess")
+       elif first_guess > random_number:
+           print ("Nope! Too high, have another go.")
+           guesses = guesses + 1
+       elif first_guess < random_number:
+           print ("Nope! Too low, have another go.")
+           guesses = guesses + 1
+       while True:
+           next_guess = int(input("Try to guess my number! Next guess:"))       
+           if next_guess == random_number:    
+               print ("Correct! That took you", + guesses,"guesses")
+               break
+           elif next_guess > random_number:
+               print ("Nope! Too high, have another go.")
+               guesses = guesses + 1
+           elif next_guess < random_number:
+               print ("Nope! Too low, have another go.")
+               guesses = guesses + 1
+
+print (guess_number())
