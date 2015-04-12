@@ -1,0 +1,29 @@
+# Look at each of these bits of code.  Based upon what was discussed above,what do you think they will print out? Plug the code into the visualiser here and see what’s going on (no need to save to GitHub):
+ http://www.pythontutor.com/visualize.html#mode=edit
+
+#list
+firstlist = [1,2,3,4,5]
+secondlist = firstlist
+firstlist.append(6)
+print(secondlist)
+
+#tuple
+firsttup = (1,2,3,4,5)
+secondtup = firsttup
+firsttup += (6,7)
+print(secondtup)
+
+#set
+firstset = {1,2,3,4,5}
+secondset = firstset
+firstset.add(5)
+firstset.add(6)
+print(secondset)
+
+#dict
+firstdict = {"a":1, "b":2, "c":3}
+seconddict = firstdict
+firstdict.update({"d":4})
+print(seconddict)
+
+
