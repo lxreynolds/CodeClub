@@ -1,0 +1,79 @@
+## Question 1
+
+## Question 2
+
+
+## Question 3
+
+
+## Question 4
+
+
+## Question 5
+
+
+## Question 6
+
+
+## Question 7
+
+
+## Question 8
+
+
+## Question 9
+
+
+## Question 10
+
+
+2 - remove(list, number)
+Write a function that takes a list and an int. It should remove all elements in the list are below that number.  Assume for this (and below) that all elements are a number.
+3 - copyElementsUnder(List, number)
+Write a function that takes a list and an int and returns a copy of the list, with all elements under X removed. Note that the old list should be unaffected by creating the new list. 
+4 - removeByList(list, collection)
+Write a function that takes a list and a (list, set or tuple) and will remove from the first list any element that appears in the 2nd 
+5 - removeDuplicates(list)
+Write a function that takes a list and returns a sorted copy of the list without duplicates (Hint: think about the data types).
+6 - listOverlap(collection, collection)
+Write a function that takes two of these collections (list,set or tuple - NOT dict) and returns a list with all of the elements they have in common. 
+
+Note this will be really easy if you understand list comprehensions: 
+http://www.practicepython.org/exercise/2014/03/19/07-list-comprehensions.html 
+
+Try it once without them, and once with them
+7  createList(start, stop, step)
+Write a function that will create a list (using a list comprehension) of numbers that matches to the variables start, stop, step (see explanation from last week) and return it. Step should have a default value of 1.
+8 clubEntry(name, guestlist)*
+Write a function that takes a name (string) and a guestlist (dict). The dict should pair names (strings) with boolean True/False. The function should return True if the name is present and the value is True, and False if not present or the value is False.
+
+guestlist = {"Jamie" : True, "Tomas" : False}
+clubEntry("Jamie", guestlist)  -> True
+clubEntry("Tomas", guestlist)  -> False
+clubEntry("Sally", guestlist)  -> False
+
+
+9 factorial(number)
+Write a function that computes the factorial for a given number and returns it. Use recursion in your solution.
+10 fibSequence(number)
+Write a function that computes the sequence of fibonnacci numbers and returns it as a list. Use recursion in your solution.
+
+Hint: Recursion is trickier here because it should take a “number” and return a list. However, you can speed up your code massively if you make good use of that list.
+11 hanoi(number)
+A legend says that, somewhere in the East, near Hanoi, there is a temple. In the temple, there are three posts. In the posts, there are 64 discs of 64 different sizes. When the world was created, all the discs were in the first post; when all the discs are moved to the last post, the world will end. The monks in the temple move the discs between posts, but they must obey two simple rules. First, only one disc can be moved at a time, from one post to another post (it cannot be left anywhere else). Last, but not least, a disc can only be placed on top of a bigger disc, never on top of a smaller disc. The smallest disc can be placed on any post (all other discs are bigger); the biggest disc can only be placed on an empty post. Create a function that returns the number of moves necessary to move a set of n Hanoi disks from the initial post to the last post.
+
+Hint: You only need to return the number, not what the moves are. As with many cases of recursion, the simplest way to work out how this works it to start with the simple case (n = 1) and move up (n=2, n=3, n=4) until you can work out a recursive pattern to it, then code that in. 
+
+It should return False for a number below 1 (can’t have no pieces after all!)
+
+12 infiniteRecursion(number)
+Every time you make a recursive call, the computer needs to remember that there is a live function waiting for the return from the recursively called function. Write a function that will show you how many recursive calls you can make before the interpreter breaks (you will get an error at the end - it’s expected. We’ll cover how to deal with these soon).
+
+13 encode(string)
+Create a simple function that encodes a string and returns it. It will encode the string by converting it into a two digit number, a = 00 and z = 25 (the number should still be stored as a string).
+e.g. “abc” -> “010203”. Spaces remain unchanged, and the encoder ignores case. 
+
+For simplicity - because typing out the whole alphabet is boring and tests nothing interesting- feel free to just code this up to the letter k
+
+14 decode(string)
+Create a function that will decode a string that has been encoded using the above function and return the original string.
