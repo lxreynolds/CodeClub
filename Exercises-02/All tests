@@ -5,28 +5,52 @@
 ## Question 1
 
 ## Question 2
+remove(list, number)
 
 
 ## Question 3
+copyElementsUnder(List, number)
 
 
 ## Question 4
+removeByList(list, collection)
 
 
 ## Question 5
+removeDuplicates(list)
 
 
 ## Question 6
+listOverlap(collection, collection)
 
 
 ## Question 7
+createList(start, stop, step)
 
 
 ## Question 8
+clubEntry(name, guestlist)
 
 
 ## Question 9
-
+factorial(number)
 
 ## Question 10
+fibSequence(number)
+
+
+## Question 11
+hanoi(number)
+
+
+## Question 12
+infiniteRecursion(number)
+
+
+## Question 13
+encode(string)
+
+
+## Question 14
+decode(string)
 
