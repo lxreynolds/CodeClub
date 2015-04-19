@@ -2,6 +2,12 @@
 
 ## Question 2
 
+def remove(list,number):
+    listNew = []
+    for i in list:
+      if i >= number:
+        listNew.append(i)
+    return listNew
 
 ## Question 3
 
