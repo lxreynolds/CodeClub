@@ -51,7 +51,12 @@ def listOverlap2(collection1,collection2):
     newList = [i for i in collection1 if i in collection2]
     return newList
 
+
 ## Question 7
+
+def createList(start,stop,step):
+    newList = [i for i in range(start,stop,step)]
+    return newList
 
 
 ## Question 8
