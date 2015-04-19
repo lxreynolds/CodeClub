@@ -47,6 +47,9 @@ def listOverlap(collection1,collection2):
             newList.append(i)
     return newList
 
+def listOverlap2(collection1,collection2):
+    newList = [i for i in collection1 if i in collection2]
+    return newList
 
 ## Question 7
 
