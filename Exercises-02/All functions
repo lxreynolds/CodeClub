@@ -61,6 +61,15 @@ def createList(start,stop,step):
 
 ## Question 8
 
+def clubEntry(name,guestlist):
+    if name in guestlist:
+        if guestlist[name] == True:
+            return True
+        else:
+            return False
+    else:
+        return False
+
 
 ## Question 9
 
