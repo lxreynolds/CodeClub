@@ -40,6 +40,13 @@ def removeDuplicates(list):
 
 ## Question 6
 
+def listOverlap(collection1,collection2):
+    newList = []
+    for i in collection1:
+        if i in collection2:
+            newList.append(i)
+    return newList
+
 
 ## Question 7
 
