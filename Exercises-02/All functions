@@ -115,6 +115,16 @@ def hanoi2(number):
 
 ## Question 13
 
+def encode(string):
+    encryption = {"a":"00","b":"01","c":"02","d":"03","e":"04","f":"05","g":"06","h":"07","i":"08","j":"09","k":"10"}
+    string.lower()
+    code = ""
+    for value in string:
+        if value in encryption:
+            code = code + encryption[value]
+        else:
+            code = code + value
+    return code
 
 
 ## Question 14
