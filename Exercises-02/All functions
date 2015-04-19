@@ -84,35 +84,45 @@ def factorial(number):
 
 ## Question 10
 
+
+
+## Question 11
+1 disk = 1 move
+2 disks = 3 moves
+3 disks = 7 moves
+4 disks = 15 moves
+moves = 2^n - 1
+recursion is then 2 * last moves - 1
+
+def hanoi1(number):
+    if number < 1:
+        return False
+    else:
+        return 2 ** number - 1
+        
+def hanoi2(number):
+    if number < 1:
+        return False
+    elif number == 1:
+        return 1
+    else:
+        return 2 * (hanoi2(number - 1)) + 1
+
+
+## Question 12
+
+
+
+## Question 13
+
+
+
+## Question 14
+
+
+
+
 ##
-2 - remove(list, number)
-Write a function that takes a list and an int. It should remove all elements in the list are below that number.  Assume for this (and below) that all elements are a number.
-3 - copyElementsUnder(List, number)
-Write a function that takes a list and an int and returns a copy of the list, with all elements under X removed. Note that the old list should be unaffected by creating the new list. 
-4 - removeByList(list, collection)
-Write a function that takes a list and a (list, set or tuple) and will remove from the first list any element that appears in the 2nd 
-5 - removeDuplicates(list)
-Write a function that takes a list and returns a sorted copy of the list without duplicates (Hint: think about the data types).
-6 - listOverlap(collection, collection)
-Write a function that takes two of these collections (list,set or tuple - NOT dict) and returns a list with all of the elements they have in common. 
-
-Note this will be really easy if you understand list comprehensions: 
-http://www.practicepython.org/exercise/2014/03/19/07-list-comprehensions.html 
-
-Try it once without them, and once with them
-7  createList(start, stop, step)
-Write a function that will create a list (using a list comprehension) of numbers that matches to the variables start, stop, step (see explanation from last week) and return it. Step should have a default value of 1.
-8 clubEntry(name, guestlist)*
-Write a function that takes a name (string) and a guestlist (dict). The dict should pair names (strings) with boolean True/False. The function should return True if the name is present and the value is True, and False if not present or the value is False.
-
-guestlist = {"Jamie" : True, "Tomas" : False}
-clubEntry("Jamie", guestlist)  -> True
-clubEntry("Tomas", guestlist)  -> False
-clubEntry("Sally", guestlist)  -> False
-
-
-9 factorial(number)
-Write a function that computes the factorial for a given number and returns it. Use recursion in your solution.
 10 fibSequence(number)
 Write a function that computes the sequence of fibonnacci numbers and returns it as a list. Use recursion in your solution.
 
