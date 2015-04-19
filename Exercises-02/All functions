@@ -3,14 +3,22 @@
 ## Question 2
 
 def remove(list,number):
+    listTemp = []
+    for i in list:
+        if i < number:
+            listTemp.append(i)
+    for j in listTemp:
+        list.remove(j)
+    return list
+
+## Question 3
+
+def copyElementsUnder(list,number):
     listNew = []
     for i in list:
       if i >= number:
         listNew.append(i)
     return listNew
-
-## Question 3
-
 
 ## Question 4
 
@@ -32,7 +40,7 @@ def remove(list,number):
 
 ## Question 10
 
-
+##
 2 - remove(list, number)
 Write a function that takes a list and an int. It should remove all elements in the list are below that number.  Assume for this (and below) that all elements are a number.
 3 - copyElementsUnder(List, number)
