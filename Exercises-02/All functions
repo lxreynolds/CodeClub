@@ -129,29 +129,16 @@ def encode(string):
 
 ## Question 14
 
-
-
-
-##
-10 fibSequence(number)
-Write a function that computes the sequence of fibonnacci numbers and returns it as a list. Use recursion in your solution.
-
-Hint: Recursion is trickier here because it should take a “number” and return a list. However, you can speed up your code massively if you make good use of that list.
-11 hanoi(number)
-A legend says that, somewhere in the East, near Hanoi, there is a temple. In the temple, there are three posts. In the posts, there are 64 discs of 64 different sizes. When the world was created, all the discs were in the first post; when all the discs are moved to the last post, the world will end. The monks in the temple move the discs between posts, but they must obey two simple rules. First, only one disc can be moved at a time, from one post to another post (it cannot be left anywhere else). Last, but not least, a disc can only be placed on top of a bigger disc, never on top of a smaller disc. The smallest disc can be placed on any post (all other discs are bigger); the biggest disc can only be placed on an empty post. Create a function that returns the number of moves necessary to move a set of n Hanoi disks from the initial post to the last post.
-
-Hint: You only need to return the number, not what the moves are. As with many cases of recursion, the simplest way to work out how this works it to start with the simple case (n = 1) and move up (n=2, n=3, n=4) until you can work out a recursive pattern to it, then code that in. 
-
-It should return False for a number below 1 (can’t have no pieces after all!)
-
-12 infiniteRecursion(number)
-Every time you make a recursive call, the computer needs to remember that there is a live function waiting for the return from the recursively called function. Write a function that will show you how many recursive calls you can make before the interpreter breaks (you will get an error at the end - it’s expected. We’ll cover how to deal with these soon).
-
-13 encode(string)
-Create a simple function that encodes a string and returns it. It will encode the string by converting it into a two digit number, a = 00 and z = 25 (the number should still be stored as a string).
-e.g. “abc” -> “010203”. Spaces remain unchanged, and the encoder ignores case. 
-
-For simplicity - because typing out the whole alphabet is boring and tests nothing interesting- feel free to just code this up to the letter k
-
-14 decode(string)
-Create a function that will decode a string that has been encoded using the above function and return the original string.
+def decode(string):
+    decryption = {"00":"a","01":"b","02":"c","03":"d","04":"e","05":"f","06":"g","07":"h","08":"i","09":"j","10":"k"}
+    message = ""
+    tempList = []
+    while len(string) > 0:
+        tempList.append(string[0:2])
+        string = string[2:]
+    for value in tempList:
+        if value in decryption:
+            message = message + decryption[value]
+        else:
+            message = message + value
+    return message
