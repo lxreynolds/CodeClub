@@ -11,6 +11,7 @@ def remove(list,number):
         list.remove(j)
     return list
 
+
 ## Question 3
 
 def copyElementsUnder(list,number):
@@ -22,6 +23,11 @@ def copyElementsUnder(list,number):
 
 ## Question 4
 
+def removeByList(list,collection):
+    for i in collection:
+        if i in list:
+            list.remove(i)
+    return (list)
 
 ## Question 5
 
