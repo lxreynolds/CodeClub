@@ -21,6 +21,7 @@ def copyElementsUnder(list,number):
         listNew.append(i)
     return listNew
 
+
 ## Question 4
 
 def removeByList(list,collection):
@@ -29,7 +30,12 @@ def removeByList(list,collection):
             list.remove(i)
     return (list)
 
+
 ## Question 5
+
+def removeDuplicates(list):
+    newSet = set(list)
+    return sorted(newSet)
 
 
 ## Question 6
