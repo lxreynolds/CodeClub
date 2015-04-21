@@ -1,6 +1,6 @@
-## Not sure if need a separate file for each question. Should I be comparing answers or getting it to check automatically and just return pass or fail?
+from All functions import 
 
-## import the functions here
+
 
 ## Question 1
 
