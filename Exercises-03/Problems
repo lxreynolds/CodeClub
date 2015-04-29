@@ -1,0 +1,8 @@
+class A(object):
+'''returns the input as a string'''
+        def echo(self, word):
+            self.echo = str(word)
+            return self.echo
+
+call with x=A() '''this creates a new instance of A'''
+then x.echo(thing want to convert)
