@@ -6,3 +6,17 @@ class A(object):
 
 call with x=A() '''this creates a new instance of A'''
 then x.echo(thing want to convert)
+
+''' errors????
+
+class A(object):
+        def echo(self, word):
+            try:
+                self.echo = str(word)
+                return self.echo
+            except NameError:
+                print ("Error")
+            except TypeError:
+                print ("Error")
+
+'''
