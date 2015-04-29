@@ -7,7 +7,7 @@ class A(object):
 call with x=A() '''this creates a new instance of A'''
 then x.echo(thing want to convert)
 
-''' errors????
+''' errors?????
 
 class A(object):
         def echo(self, word):
