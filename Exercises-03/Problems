@@ -65,3 +65,32 @@ class Box:
             return __stuff__
         else:
             return False
+
+
+class Dancer:
+
+    def __init__(self, name, partner=None):
+        self.name = name
+        self.partner = partner
+
+    def pair(partner):
+        '''joins two partners together if both of them are single and returns True, otherwise returns False'''
+        if self.partner != None:
+            return False
+        elif randomhottie.partner != None:
+            return False
+        else:
+            self.partner = randomhottie
+            randomhottie.partner = self
+            return True
+
+    def dance():
+        '''prints a dancer and their partner if they have one, otherwise they dance alone'''
+        if self.partner != None:
+            return self.name + " dances with " + self.partner
+        else:
+            return self.name + " dances on their own"
+
+    def __str__():
+        '''prints the name of the dancer'''
+        print (self.name)
