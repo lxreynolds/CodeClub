@@ -10,3 +10,9 @@ class Echo:
             return "Error"
         except TypeError:
             return "Error"
+            
+'''doesn't this have a field though? and doesn't it have two methods? isn't something stripped down along the lines of this better?
+class Echo:
+        def echo(self):
+            return str()
+'''
