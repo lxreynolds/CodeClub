@@ -16,3 +16,51 @@ class Echo:
         def echo(self):
             return str()
 '''
+
+
+class Box:
+
+    shut = "yes"
+    stuff = None
+
+    def put(object):
+        '''puts some stuff into the box'''
+        if Box.shut == "yes":
+            return False
+        elif Box.stuff != None:
+            return False
+        else:
+            Box.stuff = object
+            return True
+
+    def open():
+        '''opens the box if it/'s closed and returns True, otherwise False'''
+        if Box.shut == "yes":
+            Box.shut = "no"
+            return True
+        else:
+            return False
+
+    def close():
+        '''closes the box if it/'s open and returns True, otherwise False'''
+        if Box.shut == "no":
+            Box.shut = "yes"
+            return True
+        else:
+            return False
+
+    def peak():
+        '''returns a glimpse of the object within the box if it is open, otherwise return False'''
+        if Box.shut == "no":
+            return str(Box.stuff[::2])
+        else:
+            return False
+
+    def get():
+        '''if the box is open this returns what/'s in the box and empties the box, otherwise returns False'''
+        if Box.shut == "no":
+            __stuff__ = Box.stuff
+            Box.stuff = None
+            return __stuff__
+        else:
+            return False
