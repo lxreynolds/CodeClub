@@ -1,22 +1,12 @@
-class A(object):
-'''returns the input as a string'''
-        def echo(self, word):
-            self.echo = str(word)
-            return self.echo
+class Echo:
+    def __init__(self, object):
+        self.object = object
 
-call with x=A() '''this creates a new instance of A'''
-then x.echo(thing want to convert)
-
-''' errors?????
-
-class A(object):
-        def echo(self, word):
-            try:
-                self.echo = str(word)
-                return self.echo
-            except NameError:
-                print ("Error")
-            except TypeError:
-                print ("Error")
-
-'''
+    def __str__(self):
+        '''returns the string representation of an object, or an error if it can't be converted to a string'''
+        try:
+            return str(self.object)
+        except NameError:
+            return "Error"
+        except TypeError:
+            return "Error"
